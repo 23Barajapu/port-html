@@ -18,18 +18,11 @@ const projectData = [
     link: "https://tembakaucaringin.com/"
   },
   {
-    title: "Next.js Web Application",
-    description: ["Full-Stack Web App", "Server-Side Rendering", "API Integration", "Modern UI"],
-    tools: "Next.js, TypeScript, Node.js",
-    image: "images/next.webp",
-    link: ""
-  },
-  {
-    title: "React Dashboard UI",
-    description: ["Admin Dashboard", "Data Visualization", "Responsive Design"],
-    tools: "React, TypeScript, CSS",
-    image: "images/react.webp",
-    link: ""
+    title: "Biro Jasa Mahkota",
+    description: ["Sistem Biro Jasa Pengurusan STNK, BPKB, Balik nama, dan Mutasi"],
+    tools: "PHP, Laravel, MySQL, JavaScript",
+    image: "images/bjmahkota.webp",
+    link: "bjmahkota.com"
   }
 ];
 
