@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Baraja Putra — Developer & Prompt Engineer Portfolio. Front-End Development, React, Laravel, AI Integration." />
+  <title>Baraja Putra — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor-main" id="cursorMain"></div>
+
+  <!-- Decorative Circles -->
+  <div class="landing-circle1"></div>
+  <div class="landing-circle2"></div>
+  <div class="nav-fade" id="navFade"></div>
+
+  <!-- Navbar -->
+  <header class="header" id="mainHeader">
+    <a href="#" class="navbar-title" data-cursor="disable">Logo</a>
+    <a href="mailto:barajapu23@gmail.com" class="navbar-connect" data-cursor="disable">barajapu23@gmail.com</a>
+    <ul>
+      <li><a href="#about" data-cursor="disable"><div class="hover-link"><div class="hover-in">ABOUT<div>ABOUT</div></div></div></a></li>
+      <li><a href="#work"  data-cursor="disable"><div class="hover-link"><div class="hover-in">WORK<div>WORK</div></div></div></a></li>
+      <li><a href="#contact" data-cursor="disable"><div class="hover-link"><div class="hover-in">CONTACT<div>CONTACT</div></div></div></a></li>
+    </ul>
+  </header>
+
+  <!-- Social Icons (fixed) -->
+  <div class="icons-section">
+    <div class="social-icons" id="social">
+      <span>
+        <a href="https://github.com/23Barajapu" target="_blank" rel="noopener noreferrer" title="GitHub">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+        </a>
+      </span>
+      <span>
+        <a href="https://www.linkedin.com/in/barajapu/" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+        </a>
+      </span>
+      <span>
+        <a href="https://x.com/barajapu_" target="_blank" rel="noopener noreferrer" title="Twitter / X">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        </a>
+      </span>
+      <span>
+        <a href="https://www.instagram.com/barajapu_/" target="_blank" rel="noopener noreferrer" title="Instagram">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        </a>
+      </span>
+    </div>
+    <a class="resume-button" href="#" data-cursor="disable">
+      <div class="hover-link"><div class="hover-in">RESUME<div>RESUME</div></div></div>
+      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+    </a>
+  </div>
+
+  <!-- ========= MAIN CONTENT ========= -->
+  <div class="container-main">
+
+    <!-- LANDING -->
+    <section class="landing-section" id="landingDiv">
+      <div class="landing-container">
+        <!-- Left: Name -->
+        <div class="landing-intro">
+          <h2>Hello! I'm</h2>
+          <h1>Baraja<br /><span>Putra</span></h1>
+        </div>
+        <!-- Right: Role -->
+        <div class="landing-info">
+          <p class="landing-role-label">A Creative</p>
+          <div class="landing-role-animated">
+            <span class="landing-role-1">Frontend Developer</span>
+            <span class="landing-role-2">Web Developer</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about-section section-container" id="about">
+      <div class="about-me about-card">
+        <h3 class="about-title">About Me</h3>
+        <p class="about-desc">
+          Mahasiswa Teknologi Informasi dan Komputer yang memiliki spesialisasi dalam
+          <b>Front-End Development</b>, menciptakan antarmuka yang responsif dan intuitif
+          menggunakan <b>React, HTML, CSS, Laravel</b>.<br /><br />
+          Di sisi lain, saya memiliki minat mendalam pada <b>Prompt Engineering</b>, di mana
+          saya merancang dan mengoptimalkan interaksi dengan <b>Large Language Models (LLM)</b>
+          untuk menghasilkan output yang akurat dan relevan.<br /><br />
+          Saya percaya masa depan aplikasi terletak pada integrasi <b>AI</b> yang mulus.
+        </p>
+      </div>
+    </section>
+
+    <!-- WHAT I DO -->
+    <section class="whatIDO" id="whatido">
+      <div class="what-box">
+        <h2 class="title">
+          W<span class="hat-h2">HAT</span>
+          <div>I<span class="do-h2"> DO</span></div>
+        </h2>
+      </div>
+      <div class="what-box">
+        <div class="what-box-in">
+          <!-- dashed vertical border -->
+          <div class="what-border2">
+            <svg width="100%" height="100%" preserveAspectRatio="none">
+              <line x1="0" y1="0" x2="0" y2="100%" stroke="white" stroke-width="2" stroke-dasharray="7,7" />
+              <line x1="100%" y1="0" x2="100%" y2="100%" stroke="white" stroke-width="2" stroke-dasharray="7,7" />
+            </svg>
+          </div>
+
+          <!-- Card 1: Develop -->
+          <div class="what-content what-noTouch" id="whatContent0">
+            <div class="what-border1">
+              <svg width="100%" height="100%" preserveAspectRatio="none">
+                <line x1="0" y1="0" x2="100%" y2="0" stroke="white" stroke-width="2" stroke-dasharray="6,6" />
+                <line x1="0" y1="100%" x2="100%" y2="100%" stroke="white" stroke-width="2" stroke-dasharray="6,6" />
+              </svg>
+            </div>
+            <div class="what-corner"></div>
+            <div class="what-content-in">
+              <h3>FRONTEND DEVELOPER</h3>
+              <h4>Description</h4>
+              <p>Membangun antarmuka web yang modern, responsif, dan interaktif. Saya fokus pada pengalaman pengguna yang mulus dengan menulis kode yang bersih, terstruktur, dan mudah dipelihara — mulai dari desain UI hingga integrasi API.</p>
+              <h5>Skillset &amp; tools</h5>
+              <div class="what-content-flex">
+                <div class="what-tags">JavaScript</div>
+                <div class="what-tags">TypeScript</div>
+                <div class="what-tags">React</div>
+                <div class="what-tags">Next.js</div>
+                <div class="what-tags">HTML</div>
+                <div class="what-tags">CSS</div>
+                <div class="what-tags">Laravel</div>
+                <div class="what-tags">PHP</div>
+                <div class="what-tags">MySQL</div>
+              </div>
+            </div>
+            <div class="what-arrow"></div>
+          </div>
+
+          <!-- Card 2: Web Developer -->
+          <div class="what-content what-noTouch" id="whatContent1">
+            <div class="what-border1">
+              <svg width="100%" height="100%" preserveAspectRatio="none">
+                <line x1="0" y1="100%" x2="100%" y2="100%" stroke="white" stroke-width="2" stroke-dasharray="6,6" />
+              </svg>
+            </div>
+            <div class="what-corner"></div>
+            <div class="what-content-in">
+              <h3>WEB DEVELOPER</h3>
+              <h4>Description</h4>
+              <p>Mengembangkan aplikasi web full-stack dari sisi backend hingga frontend. Saya membangun sistem yang scalable, efisien, dan aman — mulai dari pengelolaan database, API, hingga tampilan yang menarik bagi pengguna.</p>
+              <h5>Skillset &amp; tools</h5>
+              <div class="what-content-flex">
+                <div class="what-tags">Node.js</div>
+                <div class="what-tags">Laravel</div>
+                <div class="what-tags">PHP</div>
+                <div class="what-tags">MySQL</div>
+                <div class="what-tags">Git</div>
+                <div class="what-tags">Figma</div>
+              </div>
+            </div>
+            <div class="what-arrow"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CAREER -->
+    <section class="career-section section-container" id="career">
+      <h2>My career <span>&amp;</span><br />experience</h2>
+      <div class="career-info">
+        <div class="career-timeline"><div class="career-dot"></div></div>
+
+        <div class="career-info-box">
+          <div class="career-role">
+            <h4>Head of Student Association</h4>
+            <h5>HIMATIKOM</h5>
+          </div>
+          <h3>2024</h3>
+          <p>Head of the Subang State Polytechnic Information and Computer Technology Student Association Cakravikasa Cabinet Period 2024-2025</p>
+        </div>
+
+        <div class="career-info-box">
+          <div class="career-role">
+            <h4>Position In Company</h4>
+            <h5>Company Name</h5>
+          </div>
+          <h3>20XX</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim labore sit non ipsum temporibus quidem, deserunt eaque officiis mollitia ratione suscipit repellat.</p>
+        </div>
+
+        <div class="career-info-box">
+          <div class="career-role">
+            <h4>Position In Company</h4>
+            <h5>Company Name</h5>
+          </div>
+          <h3>NOW</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim labore sit non ipsum temporibus quidem, deserunt eaque officiis mollitia ratione suscipit repellat.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- WORK -->
+    <section class="work-section" id="work">
+      <div class="work-section-inner">
+        <h2>My <span>Work</span></h2>
+        <div class="work-grid" id="workGrid"></div>
+      </div>
+    </section>
+
+    <!-- TECH STACK -->
+    <section class="techstack-section" id="techstack">
+      <div class="techstack-inner">
+        <h2 class="techstack-title">My Techstack</h2>
+        <div class="techstack-grid">
+          <div class="tech-sphere" style="--delay:0s"><img src="images/react2.webp" alt="React"><span class="tech-name">React</span></div>
+          <div class="tech-sphere" style="--delay:.1s"><img src="images/python.webp" alt="Python"><span class="tech-name">Python</span></div>
+          <div class="tech-sphere" style="--delay:.15s"><img src="images/node2.webp" alt="Node.js"><span class="tech-name">Node.js</span></div>
+          <div class="tech-sphere" style="--delay:.2s"><img src="images/html5.webp" alt="HTML5"><span class="tech-name">HTML5</span></div>
+          <div class="tech-sphere" style="--delay:.25s"><img src="images/php.webp" alt="PHP"><span class="tech-name">PHP</span></div>
+          <div class="tech-sphere" style="--delay:.3s"><img src="images/mysql.webp" alt="MySQL"><span class="tech-name">MySQL</span></div>
+          <div class="tech-sphere" style="--delay:.35s"><img src="images/typescript.webp" alt="TypeScript"><span class="tech-name">TypeScript</span></div>
+          <div class="tech-sphere" style="--delay:.4s"><img src="images/javascript.webp" alt="JavaScript"><span class="tech-name">JavaScript</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact-section section-container" id="contact">
+      <h3>Contact</h3>
+      <div class="contact-flex">
+        <div class="contact-box">
+          <h4>Email</h4>
+          <p><a href="mailto:barajapu23@gmail.com" data-cursor="disable">barajapu23@gmail.com</a></p>
+          <h4>Phone</h4>
+          <p><a href="http://wa.me/6282315957278" data-cursor="disable">+62 823 1595 7278</a></p>
+        </div>
+        <div class="contact-box">
+          <h4>Social</h4>
+          <a href="https://github.com/23Barajapu" target="_blank" rel="noopener noreferrer" data-cursor="disable" class="contact-social">
+            Github <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/barajapu/" target="_blank" rel="noopener noreferrer" data-cursor="disable" class="contact-social">
+            Linkedin <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+          </a>
+          <a href="https://x.com/barajapu_" target="_blank" rel="noopener noreferrer" data-cursor="disable" class="contact-social">
+            Twitter <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+          </a>
+          <a href="https://www.instagram.com/barajapu_/" target="_blank" rel="noopener noreferrer" data-cursor="disable" class="contact-social">
+            Instagram <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+          </a>
+        </div>
+        <div class="contact-box">
+          <h2>Designed and Developed <br />by <span>Baraja Putra</span></h2>
+          <h5>&copy; 2025</h5>
+        </div>
+      </div>
+    </section>
+
+  </div><!-- /container-main -->
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
