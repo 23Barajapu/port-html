@@ -22,7 +22,7 @@ const projectData = [
     description: ["Sistem Biro Jasa Pengurusan STNK, BPKB, Balik nama, dan Mutasi"],
     tools: "PHP, Laravel, MySQL, JavaScript",
     image: "images/bjmahkota.webp",
-    link: "bjmahkota.com"
+    link: "https://bjmahkota.com/"
   }
 ];
 
@@ -54,7 +54,7 @@ function generateWorkCards() {
         <ul class="work-card-tags">${tagsHTML}</ul>
         <p class="work-card-tools">${project.tools}</p>
         ${project.link
-          ? `<a class="work-card-link" href="${project.link}" target="_blank" rel="noopener noreferrer">
+          ? `<a class="work-card-link" href="${project.link}" target="_blank" rel="noopener noreferrer" data-cursor="disable">
                Lihat Project
                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
              </a>`

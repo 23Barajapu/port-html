@@ -23,6 +23,10 @@
   --cMaxWidth: 1920px;
 }
 
+a, button, .hover-link {
+  user-select: auto;
+}
+
 *,
 *::before,
 *::after {
@@ -1083,7 +1087,7 @@ p {
 
 .contact-flex {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 40px;
 }
 
@@ -1124,25 +1128,44 @@ a.contact-social:hover {
   border-color: var(--accentColor);
 }
 
-.contact-box>h2 {
-  font-size: clamp(16px, 1.8vw, 22px);
-  font-weight: 400;
-  line-height: 1.5;
+.footer {
+  width: 100%;
+  padding: 60px 0 100px;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-.contact-box>h2 span {
+.footer-inner {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 30px;
+}
+
+.footer-inner h2 {
+  font-size: clamp(18px, 2vw, 24px);
+  font-weight: 400;
+  line-height: 1.4;
+  color: #888;
+}
+
+.footer-inner h2 span {
   color: var(--accentColor);
 }
 
-.contact-box>h5 {
+.footer-inner h5 {
   font-size: 16px;
   font-weight: 500;
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  opacity: .4;
-  margin-top: auto;
-  padding-top: 16px;
+  opacity: 0.3;
+}
+
+@media (max-width: 700px) {
+  .footer-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 @media(max-width: 700px) {
@@ -1176,7 +1199,7 @@ a.contact-social:hover {
   gap: 14px;
   z-index: 999;
   padding: 10px;
-  pointer-events: all;
+  pointer-events: auto;
 }
 
 .social-icons span {
@@ -1191,34 +1214,46 @@ a.contact-social:hover {
 .social-icons a {
   display: flex;
   align-items: center;
+  justify-content: center;
   color: #888;
-  transition: color .3s;
+  transition: color .3s, transform .3s;
+  cursor: pointer;
+  padding: 4px;
 }
 
 .social-icons a:hover {
   color: #fff;
+  transform: scale(1.1);
 }
 
 .resume-button {
   position: absolute;
   z-index: 99;
   display: flex;
-  gap: 6px;
+  gap: 10px;
   align-items: center;
   bottom: 40px;
   right: 0;
   white-space: nowrap;
-  letter-spacing: 4px;
-  font-size: 14px;
+  letter-spacing: 2px;
+  font-size: 13px;
   font-weight: 600;
-  color: #5e5e5e;
+  color: #eae5ec;
   cursor: pointer;
-  transition: color .5s;
-  pointer-events: all;
+  padding: 10px 24px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 50px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  transition: all .4s ease;
+  pointer-events: auto;
 }
 
 .resume-button:hover {
   color: #fff;
+  border-color: var(--accentColor);
+  background: rgba(194, 164, 255, 0.1);
+  transform: translateY(-3px);
 }
 
 @media(min-width: 900px) {
