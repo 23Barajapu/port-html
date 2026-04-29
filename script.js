@@ -32,7 +32,7 @@ function generateWorkCards() {
   if (!grid) return;
   grid.innerHTML = "";
 
-  const items = projectData.length >= 4 ? projectData : [
+  const items = projectData.length >= 3 ? projectData : [
     ...projectData,
     ...Array(4 - projectData.length).fill(projectData[0])
   ];
