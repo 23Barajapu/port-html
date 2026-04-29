@@ -160,6 +160,11 @@ p { margin: 0; }
 }
 .landing-intro h1 span { color: var(--accentColor); }
 .landing-info { position: relative; z-index: 9; }
+.landing-role-wrapper {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
 .landing-role-label {
   font-size: clamp(14px, 1.5vw, 20px);
   font-weight: 300;
@@ -203,7 +208,12 @@ p { margin: 0; }
     gap: 0;
   }
   .landing-intro { flex: 0 0 48%; }
-  .landing-info { flex: 0 0 48%; text-align: right; }
+  .landing-info {
+    flex: 0 0 48%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
 }
 @media(min-width: 1200px) { .navbar-connect { display: block; } }
 
