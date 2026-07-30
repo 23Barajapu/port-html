@@ -23,6 +23,18 @@ const projectData = [
     tools: "PHP, Laravel, MySQL, JavaScript",
     image: "images/bjmahkota.webp",
     link: "https://bjmahkota.com/"
+  },
+  {
+    title: "Money Management",
+    description: [
+      "Pencatatan Keuangan & Multi-Wallet",
+      "Manajemen Tagihan, Cicilan & Anggaran",
+      "Analisis Keuangan & Laporan PDF via Email",
+      "Autentikasi & Keamanan Data (Supabase RLS)"
+    ],
+    tools: "React 18, Vite, Supabase, Chart.js, Lucide",
+    image: "images/momanage.webp",
+    link: "https://github.com/23Barajapu/money-management"
   }
 ];
 
@@ -49,7 +61,7 @@ function generateWorkCards() {
         <img src="${project.image}" alt="${project.title}" loading="lazy" />
       </div>
       <div class="work-card-body">
-        <div class="work-card-num">0${i + 1}</div>
+        <div class="work-card-num">${String(i + 1).padStart(2, "0")}</div>
         <div class="work-card-title">${project.title}</div>
         <ul class="work-card-tags">${tagsHTML}</ul>
         <p class="work-card-tools">${project.tools}</p>
