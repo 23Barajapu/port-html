@@ -34,7 +34,7 @@ const projectData = [
     ],
     tools: "React 18, Vite, Supabase, Chart.js, Lucide",
     image: "images/momanage.webp",
-    link: "https://github.com/23Barajapu/money-management"
+    link: "https://money-management-xi-three.vercel.app/"
   }
 ];
 
